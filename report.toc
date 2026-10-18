@@ -1,0 +1,26 @@
+\contentsline {section}{\numberline {1}项目概况}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}要解决的问题}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}项目目标}{3}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}系统范围}{3}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}明确不实现的内容}{4}{subsection.1.4}%
+\contentsline {section}{\numberline {2}整体业务分析}{5}{section.2}%
+\contentsline {subsection}{\numberline {2.1}角色与权限}{5}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}主要业务流程}{5}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}商品从草稿到发布}{5}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}预约到交易完成}{5}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}取消与超时}{5}{subsubsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.4}下架、违规与退货}{5}{subsubsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.3}主要数据及其关系}{8}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}业务状态与状态转换}{8}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}商品状态}{8}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}预约与订单状态}{8}{subsubsection.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.4.3}退货状态}{8}{subsubsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.5}并发与旧页面处理}{8}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}需求统计}{10}{subsection.2.6}%
+\contentsline {section}{\numberline {3}实验总结}{10}{section.3}%
+\contentsline {subsection}{\numberline {3.1}访谈中的困难与解决方法}{10}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}需求整理中的困难与解决方法}{11}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}人工审查的作用}{11}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}AI 辅助需求整理的作用与局限}{11}{subsection.3.4}%
+\contentsline {section}{\numberline {4}版本信息}{12}{section.4}%
+\contentsline {section}{\numberline {A}需求条目一览}{12}{appendix.A}%
