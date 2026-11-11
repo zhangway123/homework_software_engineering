@@ -1,0 +1,31 @@
+@startuml
+title Reservation to Purchase Completion
+autonumber
+actor Purchaser as B
+actor Seller as S
+participant "Client" as UI
+participant "Transaction Service" as T
+database "Database" as DB
+
+B -> UI : Reserve
+UI -> T : reserve(...)
+T -> DB : Save reservation (pending confirmation)
+T --> UI : Reservation successful
+note right: Auto-cancel if not confirmed within 24h
+
+S -> UI : Confirm transaction
+UI -> T : confirm(...)
+T --> B : Notify: pay within 2 hours
+B -> UI : Pay
+UI -> T : pay(...)
+T -> DB : Escrow payment + create order
+T --> UI : Payment successful
+note right: Auto-cancel if unpaid within 2 hours
+
+S -> UI : Ship
+UI -> T : ship(...)
+B -> UI : Confirm receipt
+UI -> T : confirmReceipt(...)
+T -> DB : Pay seller + complete order
+T --> UI : Transaction completed
+@enduml

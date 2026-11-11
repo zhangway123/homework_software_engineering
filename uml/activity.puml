@@ -1,0 +1,37 @@
+@startuml
+' Simplified English version: Reservation to Completed Transaction
+title Reservation-to-Transaction Flow 
+skinparam activityDiamondBackgroundColor #FDF3E7
+skinparam activityBackgroundColor #EDF3FB
+skinparam defaultFontName "Microsoft YaHei"
+
+start
+:浏览商品;
+:买家预约;
+if (预约有效?\n存量大于0) then (Yes)
+  :减少库存\n产生一项预约;
+  :买卖双方沟通;
+  if (卖家在24h内确认？\n且买家没有取消预约？) then (Yes)
+    :生成订单\n等待买家付款\n(卖家确认2h之内);
+    if (付款成功?) then (Yes)
+      :平台托管货款\n改变订单状态;
+      if (卖家7天内发货\n且买家7天内收货?) then (Yes)
+        if (买家退货?) then (Yes)
+          :卖家收货后\n托管资金交还买方;
+        else (No / timeout)
+          :视为依然完成交易;
+        endif
+      else (No / overdue)
+        :卖家超期视为取消交易\n买家超期视为完成交易;
+      endif
+    else (No)
+      :取消订单\n恢复对应库存;
+    endif
+  else (No)
+    :取消预约\n同时恢复对应库存;
+  endif
+else (No)
+  :拒绝该预约;
+endif
+stop
+@enduml

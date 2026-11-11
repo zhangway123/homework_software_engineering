@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>登录 · 流转二手</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="login-page">
+
+  <!-- ===== 左侧品牌区 ===== -->
+  <section class="brand-panel">
+    <div class="brand-top">
+      <span class="logo-mark">↻</span>
+      <span>流转二手</span>
+    </div>
+
+    <div class="brand-copy">
+      <span class="eyebrow"><span class="dot"></span>TRUSTED SECOND-HAND MARKET</span>
+      <h1 class="brand-title">让每一件闲置，<br>遇见<em>下一位主人</em>。</h1>
+      <p class="brand-sub">
+        校园与社区的可信二手交易平台。预约制交易、平台托管资金，
+        从预约到收货，每一步都有记录。
+      </p>
+    </div>
+
+    <ul class="brand-features">
+      <li>
+        <span class="feature-tick">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg>
+        </span>
+        关键词搜索 + 优先级推荐，快速找到心仪好物
+      </li>
+      <li>
+        <span class="feature-tick">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg>
+        </span>
+        预约 · 确认 · 付款 · 收货全流程留痕，交易更安心
+      </li>
+      <li>
+        <span class="feature-tick">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg>
+        </span>
+        平台托管货款，买家确认收货后再打款给卖家
+      </li>
+    </ul>
+
+    <div class="brand-foot">
+      <span>© 2026 流转二手</span>
+      <span>UML 课程设计 · 界面演示</span>
+    </div>
+  </section>
+
+  <!-- ===== 右侧登录表单 ===== -->
+  <section class="form-panel">
+    <div class="login-card">
+      <h1>欢迎回来</h1>
+      <p class="login-welcome">登录账号，继续发现值得流转的好物。</p>
+
+      <form class="login-form" onsubmit="return false;">
+        <div class="field">
+          <label class="field-label" for="username">
+            <span>用户名</span>
+            <span class="hint">注册时使用的用户名</span>
+          </label>
+          <div class="input-shell">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.6"/><path d="M4.8 20.4a7.4 7.4 0 0 1 14.4 0"/></svg>
+            <input id="username" name="username" type="text" value="linhe_2026" autocomplete="username">
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="field-label" for="password">
+            <span>密码</span>
+            <a class="link" href="#" style="font-size:12px;">忘记密码？</a>
+          </label>
+          <div class="input-shell">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="10.5" width="15" height="10" rx="2.4"/><path d="M8.2 10.5V7.8a3.8 3.8 0 0 1 7.6 0v2.7"/></svg>
+            <input id="password" name="password" type="password" value="12345678" autocomplete="current-password">
+            <button class="eye-btn" type="button" title="显示密码" aria-label="显示密码">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 12S6 5.8 12 5.8 21.5 12 21.5 12 18 18.2 12 18.2 2.5 12 2.5 12Z"/><circle cx="12" cy="12" r="2.6"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label class="check">
+            <input type="checkbox" checked>
+            <span>记住我</span>
+          </label>
+          <span style="color:var(--muted);font-size:12px;">登录后保持 7 天免登录</span>
+        </div>
+
+        <button class="btn btn-primary btn-block" type="submit">登 录</button>
+
+        <div class="login-alt">还没有账号</div>
+
+        <button class="btn btn-outline btn-block login-register" type="button">注册新账号</button>
+      </form>
+
+      <div class="login-note">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5.4"/><path d="M12 7.6h.01"/></svg>
+        <span>
+          <b>同一账号可同时作为买家与卖家使用</b>；管理员账号由平台预置，不参与买卖。
+          预约消息、订单与对话均与账号绑定。
+        </span>
+      </div>
+
+      <p class="login-terms">登录即表示你已阅读并同意《用户协议》与《隐私政策》</p>
+    </div>
+  </section>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的订单 · 流转二手</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== 顶栏 ===== -->
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="#">
+      <span class="logo-mark">↻</span>
+      <span>流转二手</span>
+    </a>
+
+    <div class="search">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="11" cy="11" r="6.6"/><path d="m19.6 19.6-3.4-3.4"/></svg>
+      <input type="text" placeholder="搜索我的订单、商品或卖家" aria-label="搜索订单">
+      <button class="search-btn" type="button">搜索</button>
+    </div>
+
+    <div class="header-actions">
+      <button class="icon-btn" type="button" title="消息">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 11.6a8 8 0 0 1-8 8H4.4l-2 2v-10a8 8 0 0 1 8-8h2.1a8 8 0 0 1 8 8Z"/></svg>
+        <span class="dot"></span>
+      </button>
+      <button class="btn btn-primary btn-sm" type="button">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+        发布商品
+      </button>
+      <div class="user-menu">
+        <span class="avatar">林</span>
+        <span class="name">林禾</span>
+        <svg class="caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="page">
+  <nav class="crumb">
+    <span>首页</span><span class="sep">/</span>
+    <span>个人中心</span><span class="sep">/</span>
+    <span class="current">我的订单</span>
+  </nav>
+
+  <div class="orders-head">
+    <div>
+      <h1>我的订单</h1>
+      <p>集中管理预约、付款、收货与售后进度。</p>
+    </div>
+    <a class="link" href="#">售后服务与帮助 →</a>
+  </div>
+
+  <div class="order-tabs">
+    <span class="order-tab active">全部 <span class="tab-count">12</span></span>
+    <span class="order-tab">预约中 <span class="tab-count">1</span></span>
+    <span class="order-tab">待付款 <span class="tab-count">1</span></span>
+    <span class="order-tab">待发货 <span class="tab-count">1</span></span>
+    <span class="order-tab">待收货 <span class="tab-count">1</span></span>
+    <span class="order-tab">已完成 <span class="tab-count">6</span></span>
+    <span class="order-tab">退款 / 售后 <span class="tab-count">1</span></span>
+  </div>
+
+  <!-- ===== 订单 1：预约中 ===== -->
+  <article class="order-card">
+    <div class="order-card-head">
+      <div class="order-head-left">
+        <span>2026-11-08 14:32</span>
+        <span class="order-no">预约单号 RSV-20261108-031</span>
+      </div>
+      <span class="status status-info">预约中 · 待卖家确认</span>
+    </div>
+
+    <div class="order-card-body">
+      <div class="order-product">
+        <div class="thumb-sm grad-2"><span>🎧</span></div>
+        <div class="op-info">
+          <h3>索尼 WH-1000XM4 头戴式降噪耳机</h3>
+          <p class="op-spec">95 新 · 同校自提 · 平台资金托管</p>
+          <p class="op-seller">卖家：<b>周舟</b> · 西区 12 号楼 · 信用极好</p>
+        </div>
+      </div>
+      <div class="order-amount">
+        <span class="amount-label">预约价格</span>
+        <span class="amount"><span class="sym">¥</span>980.00</span>
+        <span class="amount-note">确认后 2 小时内付款</span>
+      </div>
+      <div class="order-actions">
+        <button class="btn btn-outline btn-sm" type="button">取消预约</button>
+        <button class="btn btn-ghost btn-sm" type="button">联系卖家</button>
+      </div>
+    </div>
+
+    <div class="order-card-foot">
+      <span class="hint warn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.4"/><path d="M12 7.4v4.8l3 1.8"/></svg>
+        卖家需在 <b>23:41:09</b> 内确认预约，超时将自动取消并释放库存
+      </span>
+      <a class="link" href="#">查看预约详情</a>
+    </div>
+  </article>
+
+  <!-- ===== 订单 2：待付款 ===== -->
+  <article class="order-card">
+    <div class="order-card-head">
+      <div class="order-head-left">
+        <span>2026-11-08 13:06</span>
+        <span class="order-no">订单号 202611080347</span>
+      </div>
+      <span class="status status-warn">待付款</span>
+    </div>
+
+    <div class="order-card-body">
+      <div class="order-product">
+        <div class="thumb-sm grad-1"><span>⌨️</span></div>
+        <div class="op-info">
+          <h3>罗技 MX Keys 无线机械键盘 全尺寸</h3>
+          <p class="op-spec">九成新 · 同校自提 · 平台资金托管</p>
+          <p class="op-seller">卖家：<b>阿禾</b> · 东区 3 号楼 · 信用极好</p>
+        </div>
+      </div>
+      <div class="order-amount">
+        <span class="amount-label">应付金额</span>
+        <span class="amount"><span class="sym">¥</span>398.00</span>
+        <span class="amount-note">已含平台服务费 ¥0.00</span>
+      </div>
+      <div class="order-actions">
+        <button class="btn btn-ghost btn-sm" type="button">取消订单</button>
+        <button class="btn btn-primary btn-sm" type="button">立即付款</button>
+      </div>
+    </div>
+
+    <div class="order-card-foot">
+      <span class="hint warn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.4"/><path d="M12 7.4v4.8l3 1.8"/></svg>
+        请在 <b>01:12:36</b> 内完成付款，超时订单将自动关闭并释放库存
+      </span>
+      <a class="link" href="#">付款遇到问题？</a>
+    </div>
+  </article>
+
+  <!-- ===== 订单 3：待收货 ===== -->
+  <article class="order-card">
+    <div class="order-card-head">
+      <div class="order-head-left">
+        <span>2026-11-05 09:18</span>
+        <span class="order-no">订单号 202611050129</span>
+      </div>
+      <span class="status status-ship">待收货</span>
+    </div>
+
+    <div class="order-card-body">
+      <div class="order-product">
+        <div class="thumb-sm grad-5"><span>⌨️</span></div>
+        <div class="op-info">
+          <h3>客制化 68 键机械键盘套件 含键帽</h3>
+          <p class="op-spec">九成新 · 快递配送 · 平台资金托管</p>
+          <p class="op-seller">卖家：<b>沈一</b> · 东区 7 号楼 · 信用良好</p>
+        </div>
+      </div>
+      <div class="order-amount">
+        <span class="amount-label">实付金额</span>
+        <span class="amount"><span class="sym">¥</span>450.00</span>
+        <span class="amount-note">货款由平台托管中</span>
+      </div>
+      <div class="order-actions">
+        <button class="btn btn-outline btn-sm" type="button">查看物流</button>
+        <button class="btn btn-primary btn-sm" type="button">确认收货</button>
+      </div>
+    </div>
+
+    <div class="order-card-foot">
+      <span class="hint info">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2.8" y="7" width="12" height="10" rx="1.6"/><path d="M14.8 10.2h3l3.4 3.2v3.6h-6.4Z"/><circle cx="7.2" cy="18.4" r="1.7"/><circle cx="17.4" cy="18.4" r="1.7"/></svg>
+        卖家已发货 · 顺丰速运 <b>SF1234567890</b> · 预计 11 月 9 日送达
+      </span>
+      <a class="link" href="#">联系卖家</a>
+    </div>
+  </article>
+
+</main>
+
+</body>
+</html>

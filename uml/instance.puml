@@ -1,0 +1,24 @@
+@startuml
+left to right direction
+actor purchaser
+actor seller
+actor administrator
+
+purchaser --> (Browse products)
+purchaser --> (Create reservation)
+purchaser --> (Pay)
+purchaser --> (Confirm receipt)
+purchaser --> (Request return)
+purchaser --> (Start communication)
+
+seller --> (Publish product)
+seller --> (Submit for review)
+seller --> (Confirm reservation)
+seller --> (Ship order)
+seller --> (Start communication)
+
+administrator --> (Review products)
+administrator --> (Review returns)
+administrator --> (Handle reports)
+administrator --> (View chat with ticket authorization)
+@enduml

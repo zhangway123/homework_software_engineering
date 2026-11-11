@@ -1,0 +1,60 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class User
+{
+
+    +character :enum{purchaser,seller,administrator}
+    +personal information
+    +register()
+    +login(string name,string password):bool
+}
+
+class Communication
+{
+}
+class Commodity
+{
+    +name : string
+    +price : double
+    +status
+    +remaining : int
+}
+class Reservation
+{
+    +commodity: Commodity
+    +reserve_time
+}
+class Order
+{
+    +order_id :long long int
+    +reservation: Reservation
+    +order_time
+    +status
+}
+class Sales_return
+{
+}
+class Selling_application
+{
+    +commodity: Commodity
+    +reason: string
+}
+class Priority_sales_system
+{
+    + rank()
+}
+
+User "1" -- "1..*" Communication : purchaser / seller communicate
+User "1" --> "0..*" Reservation : purchaser reserve
+Priority_sales_system "1" ..> "1..*" Commodity : calculate
+Reservation "1" --> "0..1" Order : purchase
+Order "1" *-- "0..1" Sales_return : link
+Reservation "1" o-- "1..*" Communication : link 
+Selling_application "1..*" -- "1" Commodity : update commodity
+Reservation "1..*" -- "1" Commodity : link
+User "1" --> "0..*" Selling_application : seller submit
+User "0..1" --> "0..*" Selling_application : administrator review
+User "1" -- "1..*" Sales_return : purchaser return
+User "1" -- "1" Priority_sales_system : purchaser search
+@enduml

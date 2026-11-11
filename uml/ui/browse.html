@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>商品浏览 · 流转二手</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== 顶栏 ===== -->
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="#">
+      <span class="logo-mark">↻</span>
+      <span>流转二手</span>
+    </a>
+
+    <div class="search">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="11" cy="11" r="6.6"/><path d="m19.6 19.6-3.4-3.4"/></svg>
+      <input type="text" value="机械键盘" aria-label="搜索商品">
+      <button class="search-btn" type="button">搜索</button>
+    </div>
+
+    <div class="header-actions">
+      <button class="icon-btn" type="button" title="消息">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 11.6a8 8 0 0 1-8 8H4.4l-2 2v-10a8 8 0 0 1 8-8h2.1a8 8 0 0 1 8 8Z"/></svg>
+        <span class="dot"></span>
+      </button>
+      <button class="btn btn-primary btn-sm" type="button">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+        发布商品
+      </button>
+      <div class="user-menu">
+        <span class="avatar">林</span>
+        <span class="name">林禾</span>
+        <svg class="caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="page">
+  <nav class="crumb">
+    <span>首页</span><span class="sep">/</span>
+    <span>商品浏览</span><span class="sep">/</span>
+    <span class="current">搜索结果</span>
+  </nav>
+
+  <div class="browse-layout">
+
+    <!-- ===== 左侧筛选 ===== -->
+    <aside class="filters">
+      <div class="filter-group">
+        <div class="filter-title">
+          <span>分类</span>
+          <a class="reset-link" href="#">重置</a>
+        </div>
+        <div class="chip-list">
+          <button class="chip active" type="button">全部商品</button>
+          <button class="chip" type="button">数码电子</button>
+          <button class="chip" type="button">图书教材</button>
+          <button class="chip" type="button">家居日用</button>
+          <button class="chip" type="button">运动户外</button>
+          <button class="chip" type="button">服饰鞋包</button>
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <div class="filter-title"><span>价格区间</span></div>
+        <div class="chip-list">
+          <button class="chip" type="button">¥0–100</button>
+          <button class="chip active" type="button">¥100–500</button>
+          <button class="chip" type="button">¥500–1000</button>
+          <button class="chip" type="button">¥1000 以上</button>
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <div class="filter-title"><span>成色</span></div>
+        <div class="chip-list">
+          <button class="chip" type="button">全新</button>
+          <button class="chip" type="button">95 新</button>
+          <button class="chip active" type="button">9 成新</button>
+          <button class="chip" type="button">8 成新及以下</button>
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <div class="filter-title"><span>交易方式</span></div>
+        <div class="check-list">
+          <label class="check"><input type="checkbox" checked><span>平台资金托管</span></label>
+          <label class="check"><input type="checkbox"><span>同校自提</span></label>
+          <label class="check"><input type="checkbox"><span>快递配送</span></label>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ===== 右侧结果 ===== -->
+    <section>
+      <div class="results-head">
+        <div class="results-title">
+          <h2>“<span class="kw">机械键盘</span>”的搜索结果</h2>
+          <p class="results-meta">共 <span class="strong">12</span> 件相关商品 · 按推荐优先级排序 · 仅显示可预约商品</p>
+        </div>
+        <div class="sort-tabs">
+          <span class="sort-tab active">综合推荐</span>
+          <span class="sort-tab">最新发布</span>
+          <span class="sort-tab">价格从低到高</span>
+          <span class="sort-tab">价格从高到低</span>
+        </div>
+      </div>
+
+      <div class="product-grid">
+
+        <article class="product-card">
+          <div class="thumb grad-1">
+            <span class="cond-badge">九成新</span>
+            <button class="fav-btn" type="button" title="收藏">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.3 4.6 13a4.6 4.6 0 0 1 6.5-6.5l.9.9.9-.9A4.6 4.6 0 0 1 19.4 13Z"/></svg>
+            </button>
+            <span class="emoji">⌨️</span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">罗技 MX Keys 无线机械键盘 全尺寸</h3>
+            <div class="product-price-row">
+              <span class="price"><span class="sym">¥</span>398</span>
+              <span class="stock">剩 1 件</span>
+            </div>
+            <div class="product-foot">
+              <span class="seller-avatar">禾</span>
+              <span class="seller-name">阿禾 <span class="seller-tag">· 东区 3 号楼</span></span>
+              <button class="btn btn-outline btn-sm" type="button">预约</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="thumb grad-2">
+            <span class="cond-badge">95 新</span>
+            <button class="fav-btn" type="button" title="收藏">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.3 4.6 13a4.6 4.6 0 0 1 6.5-6.5l.9.9.9-.9A4.6 4.6 0 0 1 19.4 13Z"/></svg>
+            </button>
+            <span class="emoji">⌨️</span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Keychron K8 Pro 热插拔机械键盘</h3>
+            <div class="product-price-row">
+              <span class="price"><span class="sym">¥</span>520</span>
+              <span class="stock">剩 2 件</span>
+            </div>
+            <div class="product-foot">
+              <span class="seller-avatar">周</span>
+              <span class="seller-name">周舟 <span class="seller-tag">· 西区 12 号楼</span></span>
+              <button class="btn btn-outline btn-sm" type="button">预约</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="thumb grad-3">
+            <span class="cond-badge">8 成新</span>
+            <button class="fav-btn" type="button" title="收藏">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.3 4.6 13a4.6 4.6 0 0 1 6.5-6.5l.9.9.9-.9A4.6 4.6 0 0 1 19.4 13Z"/></svg>
+            </button>
+            <span class="emoji">⌨️</span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">樱桃 MX 3.0 机械键盘 青轴 白色</h3>
+            <div class="product-price-row">
+              <span class="price"><span class="sym">¥</span>260</span>
+              <span class="stock">剩 1 件</span>
+            </div>
+            <div class="product-foot">
+              <span class="seller-avatar">陈</span>
+              <span class="seller-name">陈屿 <span class="seller-tag">· 南区 5 号楼</span></span>
+              <button class="btn btn-outline btn-sm" type="button">预约</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="thumb grad-4">
+            <span class="cond-badge">全新</span>
+            <button class="fav-btn" type="button" title="收藏">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.3 4.6 13a4.6 4.6 0 0 1 6.5-6.5l.9.9.9-.9A4.6 4.6 0 0 1 19.4 13Z"/></svg>
+            </button>
+            <span class="emoji">⌨️</span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">罗技 K380 便携蓝牙键盘 未拆封</h3>
+            <div class="product-price-row">
+              <span class="price"><span class="sym">¥</span>180</span>
+              <span class="stock">剩 3 件</span>
+            </div>
+            <div class="product-foot">
+              <span class="seller-avatar">苏</span>
+              <span class="seller-name">苏晚 <span class="seller-tag">· 北区 2 号楼</span></span>
+              <button class="btn btn-outline btn-sm" type="button">预约</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="thumb grad-5">
+            <span class="cond-badge">九成新</span>
+            <button class="fav-btn" type="button" title="收藏">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.3 4.6 13a4.6 4.6 0 0 1 6.5-6.5l.9.9.9-.9A4.6 4.6 0 0 1 19.4 13Z"/></svg>
+            </button>
+            <span class="emoji">⌨️</span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">客制化 68 键机械键盘套件 含键帽</h3>
+            <div class="product-price-row">
+              <span class="price"><span class="sym">¥</span>450</span>
+              <span class="stock">剩 1 件</span>
+            </div>
+            <div class="product-foot">
+              <span class="seller-avatar">沈</span>
+              <span class="seller-name">沈一 <span class="seller-tag">· 东区 7 号楼</span></span>
+              <button class="btn btn-outline btn-sm" type="button">预约</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="thumb grad-6">
+            <span class="cond-badge">九成新</span>
+            <button class="fav-btn" type="button" title="收藏">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.3 4.6 13a4.6 4.6 0 0 1 6.5-6.5l.9.9.9-.9A4.6 4.6 0 0 1 19.4 13Z"/></svg>
+            </button>
+            <span class="emoji">⌨️</span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">雷蛇黑寡妇 V3 机械键盘 绿轴</h3>
+            <div class="product-price-row">
+              <span class="price"><span class="sym">¥</span>610</span>
+              <span class="stock">剩 1 件</span>
+            </div>
+            <div class="product-foot">
+              <span class="seller-avatar">方</span>
+              <span class="seller-name">方知 <span class="seller-tag">· 南区 9 号楼</span></span>
+              <button class="btn btn-outline btn-sm" type="button">预约</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <nav class="pagination">
+        <button class="page-btn muted" type="button">‹</button>
+        <button class="page-btn active" type="button">1</button>
+        <button class="page-btn" type="button">2</button>
+        <button class="page-btn" type="button">›</button>
+        <span class="page-info">共 12 件 · 每页 6 件</span>
+      </nav>
+    </section>
+
+  </div>
+</main>
+
+</body>
+</html>
